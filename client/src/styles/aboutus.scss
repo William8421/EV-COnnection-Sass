@@ -1,0 +1,126 @@
+.aboutUsContainer {
+    .backgroundContainer {
+        height: 58vh;
+        background-image: url('../img/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 1.5rem;
+
+        h1 {
+            background-color: $light;
+            text-align: center;
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            padding: .3rem .4rem;
+        }
+    }
+
+    .logosContainer {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $light;
+        padding: 1rem 10%;
+        gap: 2rem;
+
+        .logoBox {
+            max-width: 35%;
+            display: flex;
+            align-items: center;
+            gap: 5%;
+
+            img {
+                width: 40%;
+                background-color: $info;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .whoWeAreContainer {
+        background-color: $light;
+        margin: 2rem 0 1rem 2rem;
+
+        h3 {
+            padding-top: 2rem;
+            padding-left: 2rem;
+        }
+
+        p {
+            padding: 2rem;
+        }
+    }
+
+    .imgsContainer {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .wallBoxImg {
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin-right: 6rem;
+                width: 35%;
+                min-width: 17rem;
+            }
+        }
+
+        .carChargerImg {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 35%;
+                min-width: 17rem;
+            }
+        }
+    }
+
+    .features {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        margin: 0rem 0 0 3rem;
+
+        p {
+            background-color: $light;
+            padding: 2rem;
+        }
+    }
+
+    .joinUs {
+        background-color: $info;
+        padding-bottom: 3rem;
+        margin-bottom: 6rem;
+
+        h3 {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+
+        p {
+            margin: 0 auto;
+            text-align: center;
+            width: 75%;
+        }
+    }
+   
+}
+
+@media(min-width: 847px){
+    .carChargerImg{
+        img{
+            margin-right: 15%;
+        }
+    }
+}

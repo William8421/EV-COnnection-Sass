@@ -1,0 +1,18 @@
+export const typeOfStreetDataset = [
+  "strasse",
+  "straße",
+  "str",
+  "damm",
+  "alle",
+  "chaussee",
+  "gasse",
+  "landstrasse",
+  "landstraße",
+  "pfad",
+  "platz",
+  "ring",
+  "steig",
+  "ufer",
+  "weg",
+  "zeile",
+];

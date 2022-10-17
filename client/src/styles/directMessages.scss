@@ -1,0 +1,167 @@
+.conversationsContainer {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 1.5rem;
+    padding: .7rem;
+
+    p {
+        text-align: center;
+        font-size: 1.4rem;
+        transition: all 0.3s;
+        color: $light;
+        border: 1px solid $danger;
+        border-radius: 2rem;
+        margin: 0.4rem 0;
+    }
+
+    p:hover {
+        background-color: #114360;
+        cursor: pointer;
+    }
+
+    .singleConversationContainer {
+        padding-bottom: 1rem;
+        border-bottom: solid 1px $light;
+
+        .emptyErrorMessage {
+            margin: 0 1rem;
+            margin-top: 1rem;
+
+            span {
+                color: $danger;
+                margin: 0 .5rem;
+            }
+        }
+    }
+
+}
+
+.senderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid $light 1px;
+    padding: 1rem;
+
+    .senderImgContainer {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 5px solid $light;
+        margin: 0 auto;
+
+        img,
+        .senderImage {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 0.2rem;
+            display: block;
+        }
+    }
+
+    .senderDate {
+        margin: auto 0;
+        margin-left: .5rem;
+    }
+
+    .senderMessage {
+        color: $light;
+        margin-left: 1rem;
+    }
+}
+
+.receiverContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid $light 1px;
+    padding: 1rem;
+    .receiverSubContainer{
+    .receiverImgNameContainer {
+        .receiverImgContainer {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 5px solid $light;
+            margin: 0 auto;
+
+            img,
+            .receiverImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                padding: 0.2rem;
+                display: block;
+
+            }
+
+            .receiverDate {
+                margin: auto 0;
+                margin-left: .5rem;
+            }
+        }
+    }
+
+    .receiverMessageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .receiverUserNameLink {
+            transition: all 0.2s;
+            color: $light;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .receiverName {
+            border: solid 1px $light;
+            border-radius: 1rem;
+            padding: 0 .5rem;
+        }
+        .receiverName:hover{
+            color: $danger;
+        }
+
+        .receiverMessage {
+            text-align: center;
+            color: $light;
+            margin-left: 1rem;
+        }
+    }
+    }
+}
+//messageForm
+.toUserName{
+    color: $dark;
+}
+
+@media(min-width: 847px) {
+    .conversationsContainer {
+        p {
+            width: 15rem;
+            margin: 1rem auto;
+        }
+    }
+    .senderContainer {
+        flex-direction: row;
+    }
+
+    .receiverContainer {
+        align-items: flex-start;
+        .receiverSubContainer{
+            display: flex;
+        .receiverMessageContainer {
+            align-items: flex-start;
+            .receiverName {
+                margin-left: 1rem;
+            }
+        }
+        }
+    }
+}

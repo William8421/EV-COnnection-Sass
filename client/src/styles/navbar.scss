@@ -1,0 +1,135 @@
+.navBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light;
+    position: sticky;
+    top: 0;
+
+    img {
+        width: 20%;
+    }
+
+    .burgerbutton {
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+
+        .carLogo {
+            color: $dark;
+            font-size: 1.5rem;
+            margin-right: .5rem;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+
+        .burgerIcon {
+            font-size: 1.5rem;
+            color: $dark;
+        }
+    }
+}
+
+.offCanvas {
+    background-color: $light;
+
+    .offCanvasHeader {
+        background-color: $dark;
+
+        .account {
+            transition: all 0.2s;
+            color: $light;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin: 0 1rem;
+
+            p {
+                display: block;
+                margin: 0 0.5rem;
+            }
+
+            div {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                border: 2px solid $light;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .account:hover {
+            color: $danger;
+        }
+
+        .joinButton {
+            padding: .4rem .5rem;
+            border-radius: .4rem;
+            border: solid $danger 1px;
+            background-color: transparent;
+            color: $light;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .joinButton:hover {
+            background-color: $danger;
+            border: solid $light 1px;
+        }
+
+        .joinButton:active {
+            transform: scale(1.1);
+        }
+    }
+
+    .strong {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .logInOut,
+    .link {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        transition: all .2s;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .logInOut:hover,
+    .link:hover {
+        color: $danger;
+    }
+
+    .plug {
+        margin-right: .5rem;
+    }
+}
+.btn-close{
+    background-color: $light;
+}
+
+// @media(min-width: 847px) {
+//     .navBarContainer {
+    
+//         button {
+    
+//             .burgerIcon {
+//             }
+//         }
+//     }
+// }

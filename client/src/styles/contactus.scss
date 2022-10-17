@@ -1,0 +1,104 @@
+.contactUsContainer {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+    color: white;
+
+    h1 {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    p {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .formGroup {
+            display: flex;
+            justify-content: center;
+            width: 75%;
+        }
+
+        .contactButtonContainer {
+            display: flex;
+            gap: 1rem;
+
+        }
+
+    }
+
+    .teamContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+
+        .supportTeam {
+            text-align: center;
+            width: 80%;
+        }
+
+        .ourTeam {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .teamMember {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+                width: 50%;
+                border: solid $danger 2px;
+                padding: 0.2rem;
+            }
+
+            .teamMemberName {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 847px) {
+    .contactUsContainer {
+    
+        .contactForm {
+    
+            .formGroup {
+                display: flex;
+                justify-content: center;
+                .input{
+                    max-width: 50rem;
+                }
+            }
+        }
+    
+        .teamContainer {
+            .ourTeam {
+                flex-wrap: nowrap;
+                width: 50%;
+                .teamMember{
+                    img {
+                        width: 50%;
+                    }        
+                    .teamMemberName {
+                    }
+                }
+            }
+        }
+    }
+}

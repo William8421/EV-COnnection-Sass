@@ -1,0 +1,83 @@
+.noReviews {
+    color: $light;
+}
+
+.myReviewsContainer {
+    width: 75%;
+    margin: 1rem auto;
+    color: $light;
+    padding: 1rem 2rem;
+    background-color: #114360;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .myReviewSubContainer {
+        border-bottom: solid 1px $light;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .reviewImg {
+            width: 5rem;
+            height: 5rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border: solid 5px $light;
+        }
+        .photoLinkContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            .fromUserLink {
+                text-decoration: none;
+                color: $light;
+                margin-top: .5rem;
+            }
+            .fromUserLink:hover{
+                color: $danger;
+            }
+        }
+
+        .reviewInformation {
+            p {
+                span {
+                    margin-right: .5rem;
+                    font-weight: bold;
+                }
+
+                text-align: start;
+                color: $light;
+            }
+        }
+
+        .reviewContainer {
+
+            p {
+                text-align: start;
+            }
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media(min-width: 847px) {
+    .myReviewsContainer {
+        .myReviewSubContainer {
+            display: flex;
+            flex-direction: row;
+            .photoLinkContainer {
+                width: 25%;
+            }
+            .reviewInformation {
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

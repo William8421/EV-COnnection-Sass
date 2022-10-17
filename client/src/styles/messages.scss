@@ -1,0 +1,117 @@
+// commentForm
+.commentsFormGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .messageInput {
+        margin-top: .7rem;
+        width: 75%;
+    }
+}
+
+.messageButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+// displayComments
+.mainMessageDivStyle {
+    width: 90%;
+    margin: 1rem auto;
+    color: $light;
+    padding: 1rem 2rem;
+    background-color: #114360;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 5rem;
+
+    .commentsContainer {
+        // border: solid green 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: solid 1px $light;
+
+        .box1 {
+            width: 15%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+
+            .messageImgContainer {
+                width: 5rem;
+                height: 5rem;
+
+                .messageProfileImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: solid white 5px;
+                }
+            }
+
+            .userNameLink {
+                text-decoration: none;
+                color: white;
+            }
+
+            .userNameLink:hover {
+                color: $danger;
+            }
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: $light;
+            }
+        }
+
+    }
+}
+
+.messageBoardContainer {
+    h1 {
+        text-align: center;
+        margin: 2rem;
+        color: $light;
+    }
+}
+
+@media(min-width: 847px) {
+    .mainMessageDivStyle {
+        .commentsContainer {
+            flex-direction: row;
+            .box1{
+            width: 25%;
+            }
+
+            .box2 {
+                width: 75%;
+                align-items: flex-start;
+                text-align: justify;
+                p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .messageBoardContainer {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

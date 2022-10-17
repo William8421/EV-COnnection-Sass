@@ -1,1 +1,4 @@
-# EV-COnnection-Sass
+# EV-Connection
+DCI - Full Stack Final Project
+
+## https://evconnection.herokuapp.com/

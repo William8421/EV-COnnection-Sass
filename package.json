@@ -1,0 +1,22 @@
+{
+  "name": "ev_connection",
+  "version": "1.0.0",
+  "description": "DCI - Full Stack Final Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild":"cd client && npm install && npm run build && cd ../server && npm install" ,
+    "start":"npm start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbphc/fullstack_final_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fbphc/fullstack_final_project/issues"
+  },
+  "homepage": "https://github.com/fbphc/fullstack_final_project#readme"
+}

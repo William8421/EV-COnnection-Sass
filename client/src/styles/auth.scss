@@ -1,0 +1,61 @@
+.modal-content {
+    background-color: $dark;
+    .modal-header{
+        background-color: white;
+        .closeBTN{
+            font-size: 150%;
+            position: absolute;
+            right: 5%;
+        }
+    }
+    .modal-body{
+        color: white;
+    }
+    .uploadImageContainer{
+        display: flex;
+        // align-items: center;
+        gap: .5rem;
+        input{
+            margin-bottom: .5rem;
+        }
+        .checkIcon{
+            color: $danger;
+            font-size: 2.5rem;
+        }
+        .checkIconEmpty{
+            color: $light;
+            font-size: 2.5rem;
+
+        }
+    }
+    .passwordFormGroup{
+        position: relative;
+    }
+    .showHidePassword{
+        position: absolute;
+        top: 30%;
+        right: 2%;
+        color: black;
+    }
+    .inputContainer{
+        display: flex;
+        gap: 3%;
+        .houseNumber{
+            width: 25%;
+        }
+        .postalCode{
+            width: 75%;
+        }
+    }
+    .passwordContainer{
+        position: relative;
+    }
+    .fade{
+        margin:.5rem .3rem;
+        color: $light;
+        span{
+            color: $danger;
+            margin: 0 .3rem;
+        }
+    }
+}

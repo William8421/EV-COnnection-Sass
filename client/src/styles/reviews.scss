@@ -1,0 +1,109 @@
+.reviewsContainer {
+    margin: 0 auto;
+    color: $light;
+    .reviewInput {
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 75%;
+    }
+
+    .buttonContainer {
+        text-align: center;
+        margin-top: 2rem;
+        margin: 0 auto;
+    }
+
+    .mainDivContainer {
+        width: 90%;
+        margin: 1rem auto;
+        color: $light;
+        padding: 1rem 0rem;
+        background-color: #114360;
+        border-radius: 1rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 2rem;
+
+        .reviewsSubContainer {
+            display: flex;
+            flex-direction: column;
+            margin-top: .4rem;
+            padding-bottom: .3rem;
+            .imageUserNameContainer{
+            .reviewerImgContainer {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                border: 5px solid $light;
+                margin: 0 auto;
+
+                img,
+                .reviewerImage {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    padding: 0.2rem;
+                    display: block;
+                }
+
+            }
+
+            .linkContainer {
+                display: flex;
+                justify-content: center;
+                .reviewerUserNameLink {
+                    transition: all 0.2s;
+                    color: $light;
+                    text-align: center;
+                    text-decoration: none;
+                    margin-top: 0.5rem;
+                }
+                .reviewerUserNameLink:hover{
+                    color: $danger;
+                }
+            }
+        }
+        .reviewsInfo{
+            border-bottom: solid 1px $light;
+            .date{
+                margin: 0 .5rem;
+                margin-bottom: 1rem;
+            }
+            .reviewerMessageKey{
+                margin: 0 .5rem;
+            }
+            .reviewerMessage{
+                margin: 0 .5rem 1rem 0;
+            }
+        }
+
+        }
+    }
+}
+@media(min-width: 847px) {
+    .reviewsContainer {    
+        .mainDivContainer {
+            .reviewsSubContainer {
+                flex-direction: row;
+                border-bottom: solid $light 1px;
+                margin: 0 1rem;
+                .imageUserNameContainer{
+                    width: 25%;
+            }
+            .reviewsInfo{
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border: none;
+                margin: 0 1rem;
+                .reviewerMessage{
+                    text-align: left;
+                    margin-left: .5rem;
+                }
+            }
+    
+            }
+        }
+    }
+}

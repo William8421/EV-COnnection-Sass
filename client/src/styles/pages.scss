@@ -1,0 +1,51 @@
+.pagesContainer {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    .PagLinkFirstStyled {
+        padding: 0.4rem 1rem;
+        margin: 0 0.2rem;
+        border-radius: 0.4rem 0 0 0.4rem;
+        border: 1px solid $danger;
+        background-color: transparent;
+        color: var(--dark-color);
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+
+    .PagLinkLastStyled {
+        padding: 0.4rem 1rem;
+        margin: 0 0.2rem;
+        border-radius: 0 0.4rem 0.4rem 0;
+        border: 1px solid $danger;
+        background-color: transparent;
+        color: var(--dark-color);
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+
+    .paginationNumbersItem {
+        display: flex;
+    }
+
+    .PagLinkStyledNum {
+        padding: 0.4rem 1rem;
+        margin: 0 0.4rem;
+        border: 1px solid $danger;
+        background-color: transparent;
+        color: var(--dark-color);
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+    .PagLinkFirstStyled:hover, .PagLinkLastStyled:hover, .PagLinkStyledNum:hover{
+        background-color: $danger;
+        border: solid $light 1px;
+    }
+    .PagLinkFirstStyled:active, .PagLinkLastStyled:active, .PagLinkStyledNum:active{
+        transform: scale(1.1);
+    }
+    .PagLinkFirstStyled:focus, .PagLinkLastStyled:focus, .PagLinkStyledNum:focus{
+        background-color: $danger;
+    }
+}
